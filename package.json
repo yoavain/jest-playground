@@ -14,8 +14,6 @@
 		"type-check": "tsc --build tsconfig.json",
 		"jest": "cross-env FORCE_COLOR=0 jest",
 		"jest:changed": "cross-env FORCE_COLOR=0 jest --onlyChanged origin/main --passWithNoTests",
-		"jest:unit": "cross-env FORCE_COLOR=0 jest ./test/",
-		"jest:integration": "cross-env FORCE_COLOR=0 jest ./integration_test/",
 		"prettier": "prettier --write *.json",
 		"pretsc": "rimraf dist",
 		"tsc": "tsc --build tsconfig.build.json",
