@@ -6,7 +6,7 @@ const config: Config.InitialOptions = {
     },
     testEnvironment: "node",
     restoreMocks: true,
-    testRegex: "(test|integration_test)/.*.test.ts$",
+    testRegex: "test/.*.test.ts$",
     moduleFileExtensions: ["ts", "js", "json", "node"],
     maxWorkers: "50%",
     verbose: true,
@@ -19,7 +19,7 @@ const config: Config.InitialOptions = {
         "lcov",
         "clover"
     ],
-    collectCoverageFrom: ["src/**/*.ts", "!src/run.ts", "!src/index.ts", "!**/node_modules/**"]
+    collectCoverageFrom: ["src/**/*.ts", "!**/node_modules/**"]
 };
 
 export default config;
