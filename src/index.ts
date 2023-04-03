@@ -1,1 +1,2 @@
-export * from "./main";
+export * from "./multiply";
+export * from "./sum";
